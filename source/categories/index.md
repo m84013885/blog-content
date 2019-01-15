@@ -4,3 +4,4 @@ date: 2019-01-09 11:53:03
 ---
 > [随笔](/blog/categories/随笔/ "随笔")
 > [想法](/blog/categories/想法/ "想法")
+> [感悟](/blog/categories/感悟/ "感悟")
