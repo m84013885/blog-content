@@ -1,121 +1,46 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
+<html lang="zh-Hans">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
 
 
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/blog/css/main.css?v=6.7.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=6.7.0">
-
-
-  <link rel="mask-icon" href="/blog/images/logo.svg?v=6.7.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/blog/',
-    scheme: 'Gemini',
-    version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"m84013885.github.io","root":"/blog/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Ming">
 <meta property="og:url" content="https://m84013885.github.io/blog/page/6/index.html">
 <meta property="og:site_name" content="Ming">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale">
+<meta property="article:author" content="Ming">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ming">
 
 
+<link rel="canonical" href="https://m84013885.github.io/blog/page/6/">
 
 
-
-
-  <link rel="canonical" href="https://m84013885.github.io/blog/page/6/">
-
-
-
-<script id="page.configurations">
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-Hans'
   };
 </script>
 
@@ -127,593 +52,389 @@
 
 
 
-
-
-
-
-
-
   <noscript>
   <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
+  body { margin-top: 2rem; }
+
   .use-motion .menu-item,
-  .sidebar-inner,
+  .use-motion .sidebar,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
+  .use-motion .collection-header {
+    visibility: visible;
+  }
 
-  .use-motion .logo,
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
   .use-motion .site-title,
-  .use-motion .site-subtitle {
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
   </style>
 </noscript>
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/blog/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Ming</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Ming</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/blog/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/blog/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-categories">
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/blog/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
 
   </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
+  </ul>
 </nav>
 
 
 
-  
-
-
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ming"
+      src="/blog/images/header.jpeg">
+  <p class="site-author-name" itemprop="name">Ming</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/blog/archives">
+          <span class="site-state-item-count">63</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/m84013885" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;m84013885" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/m84013885" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-            
-
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
+    <div class="main-inner index posts-expand">
       
 
+      
+      
   
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/02/13/%E7%9B%B8%E5%83%8F/">
 
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/02/13/相像/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/02/13/相像/" class="post-title-link" itemprop="url">相像</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-02-13 14:24:26 / Modified: 14:30:54" itemprop="dateCreated datePublished" datetime="2019-02-13T14:24:26+08:00">2019-02-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/02/13/%E7%9B%B8%E5%83%8F/" class="post-title-link" itemprop="url">相像</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-02-13 14:24:26 / Modified: 14:30:54" itemprop="dateCreated datePublished" datetime="2019-02-13T14:24:26+08:00">2019-02-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><em>有什么样的想法，然后大家都会有一样的想法。可能这就是所谓的环境影响思维。</em><br>最近看的比较多的是macbookpro和一些Vlog相关的东西。电脑是想用来激励自己学习的，用高价格买了这样一个东西，逼着自己用它来创造一些价值。而Vlog是用来记录，希望把身边的美好都记录下来。</p>
+          <p><em>有什么样的想法，然后大家都会有一样的想法。可能这就是所谓的环境影响思维。</em><br>最近看的比较多的是macbookpro和一些Vlog相关的东西。电脑是想用来激励自己学习的，用高价格买了这样一个东西，逼着自己用它来创造一些价值。而Vlog是用来记录，希望把身边的美好都记录下来。</p>
 <h4 id="最近计划"><a href="#最近计划" class="headerlink" title="最近计划"></a>最近计划</h4><p>接下来也是时候计划完成一下这两个小项目了：</p>
 <ol>
 <li>MacBookPro</li>
 <li>Vlog</li>
 </ol>
 
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/02/01/%E9%A2%84%E6%96%99%E4%B9%8B%E4%B8%AD/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/02/01/预料之中/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/02/01/预料之中/" class="post-title-link" itemprop="url">预料之中</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-02-01 10:49:32 / Modified: 10:52:00" itemprop="dateCreated datePublished" datetime="2019-02-01T10:49:32+08:00">2019-02-01</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/02/01/%E9%A2%84%E6%96%99%E4%B9%8B%E4%B8%AD/" class="post-title-link" itemprop="url">预料之中</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-02-01 10:49:32 / Modified: 10:52:00" itemprop="dateCreated datePublished" datetime="2019-02-01T10:49:32+08:00">2019-02-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><em>早就预料这样的一天马上会到来。</em></p>
 
-      
-      
-
-      
-        
-          
-            <p><em>早就预料这样的一天马上会到来。</em></p>
-
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/31/%E6%88%91%E4%B8%80%E7%9B%B4%E5%9C%A8%E8%BF%99%E4%B8%AA%E5%9C%86%E9%87%8C%EF%BC%8C%E4%B8%8D%E6%96%AD%E9%87%8D%E5%A4%8D/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/31/我一直在这个圆里，不断重复/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/31/我一直在这个圆里，不断重复/" class="post-title-link" itemprop="url">我一直在这个圆里，不断重复</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-31 15:45:15 / Modified: 16:34:26" itemprop="dateCreated datePublished" datetime="2019-01-31T15:45:15+08:00">2019-01-31</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/抽象/" itemprop="url" rel="index"><span itemprop="name">抽象</span></a></span>
+            <a href="/blog/2019/01/31/%E6%88%91%E4%B8%80%E7%9B%B4%E5%9C%A8%E8%BF%99%E4%B8%AA%E5%9C%86%E9%87%8C%EF%BC%8C%E4%B8%8D%E6%96%AD%E9%87%8D%E5%A4%8D/" class="post-title-link" itemprop="url">我一直在这个圆里，不断重复</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-01-31 15:45:15 / Modified: 16:34:26" itemprop="dateCreated datePublished" datetime="2019-01-31T15:45:15+08:00">2019-01-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%8A%BD%E8%B1%A1/" itemprop="url" rel="index"><span itemprop="name">抽象</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
+          <blockquote>
 <p>曾经做过的事情又再一次发生<br>可能只是换了一个场景，换了一个人物<br>却是那么的熟悉<br>同样的一句话，不一样的人<br>我的第一反应只是想笑<br>为什么经历过那么多事情<br>却还是兜兜转转回到原点</p>
 </blockquote>
 <p><em>在责怪自己没有一点成长的同时，也在感叹过去的挥之不去，一点点小事情，都像以前发生过的。可能对象变了，此时站在我面前的人可能变了。可能位置变了，现在是我站在你的位置上，去做着你当时的选择。但是结局，没有变。</em></p>
@@ -731,669 +452,317 @@
 <p>到头来<br>我还是让你失望了<br>失望的地方在于你已经不需要我了<br>我没有足够多的钱<br>没有足够多的梗<br>也没有让你满足的技术<br>外面的世界很大<br>你说的那句话让我印象深刻<br>不愿为了一棵树放弃一整片森林<br>最后我祝你在森林里早日迷路</p>
 </blockquote>
 
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/29/%E4%BA%BA%E7%94%9F%E7%9A%84%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%A4%A7%E9%83%A8%E5%88%86%E9%83%BD%E6%98%AF%E5%85%B3%E4%BA%8E%E9%92%B1/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/29/人生的主题，大部分都是关于钱/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/29/人生的主题，大部分都是关于钱/" class="post-title-link" itemprop="url">人生的主题，大部分都是关于钱</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-29 12:05:51" itemprop="dateCreated datePublished" datetime="2019-01-29T12:05:51+08:00">2019-01-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-01-30 18:21:37" itemprop="dateModified" datetime="2019-01-30T18:21:37+08:00">2019-01-30</time>
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/01/29/%E4%BA%BA%E7%94%9F%E7%9A%84%E4%B8%BB%E9%A2%98%EF%BC%8C%E5%A4%A7%E9%83%A8%E5%88%86%E9%83%BD%E6%98%AF%E5%85%B3%E4%BA%8E%E9%92%B1/" class="post-title-link" itemprop="url">人生的主题，大部分都是关于钱</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-          
-            
-          
+      <time title="Created: 2019-01-29 12:05:51" itemprop="dateCreated datePublished" datetime="2019-01-29T12:05:51+08:00">2019-01-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2019-01-30 18:21:37" itemprop="dateModified" datetime="2019-01-30T18:21:37+08:00">2019-01-30</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><em>穷人大部分时间都希望自己是个有钱人，穷的定义大概就是你自身对于金钱的欲望得不到满足。</em></p>
 
-      
-      
-
-      
-        
-          
-            <p><em>穷人大部分时间都希望自己是个有钱人，穷的定义大概就是你自身对于金钱的欲望得不到满足。</em></p>
-
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/21/%E7%9B%B8%E8%AF%8661%E5%A4%A9/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/21/相识61天/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/21/相识61天/" class="post-title-link" itemprop="url">相识61天</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-21 15:26:01 / Modified: 15:29:22" itemprop="dateCreated datePublished" datetime="2019-01-21T15:26:01+08:00">2019-01-21</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/01/21/%E7%9B%B8%E8%AF%8661%E5%A4%A9/" class="post-title-link" itemprop="url">相识61天</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-01-21 15:26:01 / Modified: 15:29:22" itemprop="dateCreated datePublished" datetime="2019-01-21T15:26:01+08:00">2019-01-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><em>清楚的知道，马上就会失去了。</em><br><img src="/blog/.io//1.jpeg"></p>
 
-      
-      
-
-      
-        
-          
-            <p><em>清楚的知道，马上就会失去了。</em><br><img src="/blog/2019/01/21/相识61天/1.jpeg" alt=""></p>
-
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/21/%E9%AA%84%E5%82%B2/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/21/骄傲/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/21/骄傲/" class="post-title-link" itemprop="url">骄傲</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-21 14:17:34 / Modified: 14:19:17" itemprop="dateCreated datePublished" datetime="2019-01-21T14:17:34+08:00">2019-01-21</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/01/21/%E9%AA%84%E5%82%B2/" class="post-title-link" itemprop="url">骄傲</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-01-21 14:17:34 / Modified: 14:19:17" itemprop="dateCreated datePublished" datetime="2019-01-21T14:17:34+08:00">2019-01-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><em>心中都有骄傲，然而这些骄傲是多么的不堪一击，很多人却是靠着这样一份骄傲活着，多么的脆弱。</em></p>
 
-      
-      
-
-      
-        
-          
-            <p><em>心中都有骄傲，然而这些骄傲是多么的不堪一击，很多人却是靠着这样一份骄傲活着，多么的脆弱。</em></p>
-
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/17/%E5%85%B3%E4%BA%8E%E4%BA%A4%E5%BE%80/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/17/关于交往/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/17/关于交往/" class="post-title-link" itemprop="url">关于交往</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-17 18:02:59" itemprop="dateCreated datePublished" datetime="2019-01-17T18:02:59+08:00">2019-01-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-17 11:17:31" itemprop="dateModified" datetime="2019-04-17T11:17:31+08:00">2019-04-17</time>
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/01/17/%E5%85%B3%E4%BA%8E%E4%BA%A4%E5%BE%80/" class="post-title-link" itemprop="url">关于交往</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-          
-            
-          
+      <time title="Created: 2019-01-17 18:02:59" itemprop="dateCreated datePublished" datetime="2019-01-17T18:02:59+08:00">2019-01-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2019-04-17 11:17:31" itemprop="dateModified" datetime="2019-04-17T11:17:31+08:00">2019-04-17</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><em>感情的稳定意味着原地打转，没有值的怀念的事情，也没有令人失望的瞬间，就这样平淡的往下走。其实这样也不是不好，只是如果继续这样下去，彼此的关系没办法进一步的升华，迟早会不欢而散，没有内心的联系，也没有外在的羁绊，走进时没有付出太多的感情，离开了也不会有很多的遗憾。</em></p>
+          <p><em>感情的稳定意味着原地打转，没有值的怀念的事情，也没有令人失望的瞬间，就这样平淡的往下走。其实这样也不是不好，只是如果继续这样下去，彼此的关系没办法进一步的升华，迟早会不欢而散，没有内心的联系，也没有外在的羁绊，走进时没有付出太多的感情，离开了也不会有很多的遗憾。</em></p>
 <h4 id="最初"><a href="#最初" class="headerlink" title="最初"></a>最初</h4><p>刚开始彼此都不了解，都会有那份期待，但是只要对方有一次“失误”，就会认定对方就是这样的人。就是一种心理，在家里看到一只蟑螂，那么在家里的暗处就住着几百只你还没发现的蟑螂。其中的一个期待破灭，当然一个期待的破灭并不会怎么样，但是这种期待在一个又一个破灭。<strong>两个人的相处可能就真的都是从100分开始的，然后接下来的每一步都在不断的扣分。如果没有足够的羁绊，到最后肯定会不欢而散。</strong></p>
 <h4 id="冲动"><a href="#冲动" class="headerlink" title="冲动"></a>冲动</h4><p>一直都认为一开始没有在一起的冲动，那么相处久了，就更加难在一起。<strong>真的很难有那些非常契合的、且一张白纸的人。</strong>在不断扣分的过程中慢慢平淡，然后分离。一次两次，三次四次，然后逐渐麻木，越来越了解所谓的套路，越来越明白这些都是一种各取所需的游戏，只要你不认真，那你就可以永远保持上风，而保持上风的人是不会被伤害到的。</p>
 <h4 id="舒服"><a href="#舒服" class="headerlink" title="舒服"></a>舒服</h4><p>时至今日才想明白，人与人的交往别落下那些特定的事情。每次别离时的拥抱，每天起床的亲吻，到后面这些东西都很容易变成压力，你不这样做了，别人会觉得你变了，你每天都这样做了，自己的内心是一种类似任务的煎熬。<strong>所以说人与人的交往，不应该揣测，更不应该限制，重要的是舒服。</strong></p>
@@ -1406,542 +775,256 @@
 <p>人与人的交往真的好难，有时真的更愿意自己一个人，不喜欢去麻烦别人，宁愿自己辛苦一点。</p>
 </blockquote>
 
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/16/%E6%96%87%E5%AD%97%E7%89%88%E7%8C%9C%E8%AF%8D%E8%AF%AD/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/16/文字版猜词语/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/16/文字版猜词语/" class="post-title-link" itemprop="url">文字版猜词语</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-16 19:19:40 / Modified: 19:27:09" itemprop="dateCreated datePublished" datetime="2019-01-16T19:19:40+08:00">2019-01-16</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/想法/" itemprop="url" rel="index"><span itemprop="name">想法</span></a></span>
+            <a href="/blog/2019/01/16/%E6%96%87%E5%AD%97%E7%89%88%E7%8C%9C%E8%AF%8D%E8%AF%AD/" class="post-title-link" itemprop="url">文字版猜词语</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-01-16 19:19:40 / Modified: 19:27:09" itemprop="dateCreated datePublished" datetime="2019-01-16T19:19:40+08:00">2019-01-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%83%B3%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">想法</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>在元旦的时候和朋友玩了一下，做动作猜词语的游戏。游戏很简单，就是出一个词语让第一个人做动作，然后第二个人跟着做…一直到最后一个人猜这个词语是什么。我就想可不可以只是文字然后传递的游戏，这样不就可以做到线上玩猜词语的游戏了。</p>
+          <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>在元旦的时候和朋友玩了一下，做动作猜词语的游戏。游戏很简单，就是出一个词语让第一个人做动作，然后第二个人跟着做…一直到最后一个人猜这个词语是什么。我就想可不可以只是文字然后传递的游戏，这样不就可以做到线上玩猜词语的游戏了。</p>
 <h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>我是这样想的，线上的话，动作肯定是控制不了的了。那么就在文字上做手脚，首先出一个两个字词语，然后第二个人根据这两个字找出相近的四字的词语（一段话，成语都可以），然后第三个就6个字，就这样一直到最后一个人猜一开始的词语是什么。当然后面的词语不能出现前面的出现过的词语（只是不能出现前面一个人相同的词语）</p>
 
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/16/%E7%9B%B8%E8%AF%8657%E5%A4%A9/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/16/相识57天/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/16/相识57天/" class="post-title-link" itemprop="url">相识57天</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-16 16:49:22 / Modified: 18:19:38" itemprop="dateCreated datePublished" datetime="2019-01-16T16:49:22+08:00">2019-01-16</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/01/16/%E7%9B%B8%E8%AF%8657%E5%A4%A9/" class="post-title-link" itemprop="url">相识57天</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-          
-            
-          
+      <time title="Created: 2019-01-16 16:49:22 / Modified: 18:19:38" itemprop="dateCreated datePublished" datetime="2019-01-16T16:49:22+08:00">2019-01-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p><em>我相信你所说的你并不懂我在想什么是真的，就像你所说的我并不懂你在想什么也是真的。</em><br><img src="/blog/.io//1.jpeg"></p>
 
-      
-      
-
-      
-        
-          
-            <p><em>我相信你所说的你并不懂我在想什么是真的，就像你所说的我并不懂你在想什么也是真的。</em><br><img src="/blog/2019/01/16/相识57天/1.jpeg" alt=""></p>
-
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/2019/01/15/2018%E7%95%99%E4%B8%8B%E4%BA%86%E4%BB%80%E4%B9%88/">
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://m84013885.github.io/blog/blog/2019/01/15/2018留下了什么/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/header.jpeg">
       <meta itemprop="name" content="Ming">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/header.jpeg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ming">
     </span>
 
     
+    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/blog/2019/01/15/2018留下了什么/" class="post-title-link" itemprop="url">2018留下了什么</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-01-15 17:30:02" itemprop="dateCreated datePublished" datetime="2019-01-15T17:30:02+08:00">2019-01-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-01-21 18:47:28" itemprop="dateModified" datetime="2019-01-21T18:47:28+08:00">2019-01-21</time>
-              
-            
-          </span>
-
+        <h2 class="post-title" itemprop="name headline">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/blog/categories/感悟/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a></span>
+            <a href="/blog/2019/01/15/2018%E7%95%99%E4%B8%8B%E4%BA%86%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">2018留下了什么</a>
+        </h2>
 
-                
-                
-              
-            </span>
-          
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-          
-            
-          
+      <time title="Created: 2019-01-15 17:30:02" itemprop="dateCreated datePublished" datetime="2019-01-15T17:30:02+08:00">2019-01-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2019-01-21 18:47:28" itemprop="dateModified" datetime="2019-01-21T18:47:28+08:00">2019-01-21</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/%E6%84%9F%E6%82%9F/" itemprop="url" rel="index"><span itemprop="name">感悟</span></a>
+        </span>
+    </span>
 
-          
-          
-
-          
-
-          
-
-          
+  
+  
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><em>感觉岁月能带给你的都是那些一系列的“越来越”。你可能会变得越来越固执、越来越平和、越来越冷漠…所有小时候形成的性格都在随着时间慢慢的放大，你本人会难以察觉，但是你会清晰的发现身边的人都在“越来越的不同”，所有人的性格都在变的越来越明显。</em></p>
+          <p><em>感觉岁月能带给你的都是那些一系列的“越来越”。你可能会变得越来越固执、越来越平和、越来越冷漠…所有小时候形成的性格都在随着时间慢慢的放大，你本人会难以察觉，但是你会清晰的发现身边的人都在“越来越的不同”，所有人的性格都在变的越来越明显。</em></p>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>而我也在非主流的道路上一去不复返，越来越的非主流，起码2018年我算是留下了一些东西。留下的东西有没有用就另说，起码可以看到2018的痕迹。2018年6个计划，完成了3个：<br><strong>1.逐渐离开父母，有了自己的空间</strong><br><strong>2.收入提升</strong><br><strong>3.对自己更好</strong><br>其余3个没有完成的：<br><strong>1.坚持健身</strong><br><strong>2.找到副业</strong><br><strong>3.不主动联系前任</strong><br>感觉坚持健身是每个人定年计划的人都必然完成不了的计划。副业本身就很难找，而且也会使你的辛苦程度翻倍，本身上班时间就不短，新工作下了班回到家都8点了，如果还要去副业，应该只能穿件滴滴代驾的衣服，然后去各大酒吧楼下蹲着了。我跟前任在一起两年多，还是留下了很多遗憾，很多我自己没有做好的事情，都没办法再回过头去弥补，不过下半年我还是照我最开始的想法，已经没有再找过她了。总的来说还是有很多要努力的地方。</p>
 <h4 id="2019年计划"><a href="#2019年计划" class="headerlink" title="2019年计划"></a>2019年计划</h4><p>传承去年的精神，今年也尽量定下符合实际情况的计划，然后围绕这些计划缓慢的执行下去(根据自身难易度排行)：<br><strong>1.收入提升2k以上</strong><br><strong>2.至少看完一本书</strong><br><strong>3.一个星期至少运动一次（如果实在没有时间，仰卧起坐和俯卧撑代替）</strong><br><strong>4.自己建的博客跪着都要坚持下去，一个星期至少一篇</strong><br><strong>5.做出一个app（ios）</strong><br><strong>6.找到女朋友</strong></p>
 
-          
-        
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+  
+  
+  
 
-
-    
-  </section>
 
   
   <nav class="pagination">
@@ -1950,203 +1033,59 @@
 
 
 
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
       
-
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/blog/images/header.jpeg" alt="Ming">
-            
-              <p class="site-author-name" itemprop="name">Ming</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/blog/archives">
-                
-                    <span class="site-state-item-count">63</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">categories</span>
-                  
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">tags</span>
-                  
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Ming</span>
-
-  
-
-  
-</div>
-
-
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
-  </div>
-
-  
 
 <script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
 
+    </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
+      
 
+      
 
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
 
+    </div>
+  </footer>
 
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script><script src="/blog/js/next-boot.js"></script>
 
-
-
-
-
+  
 
 
 
@@ -2163,50 +1102,9 @@
 
 
   
-  <script src="/blog/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/blog/js/src/utils.js?v=6.7.0"></script>
-
-  <script src="/blog/js/src/motion.js?v=6.7.0"></script>
 
 
 
-  
-  
-
-
-  <script src="/blog/js/src/affix.js?v=6.7.0"></script>
-
-  <script src="/blog/js/src/schemes/pisces.js?v=6.7.0"></script>
-
-
-
-
-  
-
-  
-
-
-  <script src="/blog/js/src/bootstrap.js?v=6.7.0"></script>
-
-
-
-  
-
-
-
-
-  
 
 
 
@@ -2215,28 +1113,17 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: "/blog/page/6/",
+    }, {"enable":true,"appId":"vMFQ1UQhCEhEAmaq7W3sfYSf-gzGzoHsz","appKey":"3NxUhaQnJha2PfLKlwXoWupV","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":false,"comment_count":false,"recordIP":false,"enableQQ":false,"requiredFields":["nick"],"placeholder":"ヾﾉ≧∀≦)o来啊，快活啊!"}
+    ));
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
