@@ -69,7 +69,7 @@ creative_commons:
   license: by-nc-sa
   sidebar: false
   post: false
-  language:
+  language: 
 
 
 # ---------------------------------------------------------------
@@ -134,7 +134,7 @@ avatar:
   rotated: false
 
 # Posts / Categories / Tags in sidebar.
-site_state: true
+site_state: false
 
 # Social Links
 # Usage: `Key: permalink || icon`
